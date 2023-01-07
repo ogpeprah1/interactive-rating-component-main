@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body{
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 0;
+}
+
+.rates{
+    display: flex;
+    gap: 1em;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: hsla(216, 12%, 54%,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.rates-item:hover{
+    cursor: pointer;
+    background-color:hsl(25, 97%, 53%);
+    color: white;
+}
+
+
+button{
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: hsl(25, 97%, 53%);
+    transition: all 0.5s;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.heading{
+    width: 330px;
+}
+
+.heading>p{
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+}
+
+.heading>h1{
+    color: white;
+}
+
+.selection{
+    background-color: hsla(216, 12%, 54%,0.1);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.selection>span{
+    color: hsl(25, 97%, 53%);
+}
+
+.feedback{
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 25px 10px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.feedback>span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+.feedback>p{
+    color: hsl(217, 12%, 63%);
+    font-weight: 700;
+    text-align: center;
+    width: 330px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: white;
+}
+.attribution a { 
+    text-decoration: none;
+    color: hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width:375px){
+    main{
+        padding: 15px;
+    }
+
+    .rates{
+        display: flex;
+        gap: 0.8em;
+    }
+
+    .heading{
+        width: 300px;
+    }
+
+    .feedback{
+        padding: 15px 5px;
+    }
+}
+
